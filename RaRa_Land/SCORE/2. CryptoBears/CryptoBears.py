@@ -151,7 +151,7 @@ class CryptoBear(IconScoreBase):
             raise IconScoreException("_address has no token")
         else:
             tokenIdList = list(json_loads(self._token_id[_address]))[index]
-            return tokenIdList[index]
+            return tokenIdList
 
     @payable
     @external
